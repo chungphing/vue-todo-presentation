@@ -1,6 +1,6 @@
 # ALLWEB Vue Presentation
-### 28 March 2019
-### By Chungphing LY
+### 28 March 2019, By Chungphing LY
+
 [Link to Slides](https://docs.google.com/presentation/d/1kKsoH7Zs0MhGzMernuXLddNZwiiQMOMaq-i5DKBak90/edit?usp=sharing)
 ___
 
