@@ -38,23 +38,3 @@ For configuration please choose default option:
 After it generates our project use
 
 `cd vue-todo` and `npm run serve` to fire up a dev server. now we can start building our application.
-___
-# Developing
-## Create Components
-
-For a Todo app, we'll need  
-* List of Todos `Todos`
-    * Individual Todo item `TodoItem`
-        * A Checkbox
-        * An Input Field
-        * A Delete Button
-* Form input to add new Todo `AddTodo.vue`
-    * Input Field
-    * A Button
-
-This will give us an idea how a complex application is developed
-
-### TodoItem
-
-Let's us start from the smallest component.
-
