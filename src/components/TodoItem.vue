@@ -1,11 +1,11 @@
 <template>
     <div v-bind:class="['todo-item', todo.completed ? 'completed' : '']">
-        <input 
-            type="checkbox" 
+        <input
+            type="checkbox"
             class="toggle"
             v-model="todo.completed">
-        <p> {{ todo.text }}</p>
-        <button class="todo-item-delete" v-on:click="deleteTodo">Delete</button>
+        <p class="todo-item-text"> {{ todo.text }}</p>
+        <button class="todo-item-delete" v-on:click="deleteTodo">X</button>
     </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
     props: ['todo'],
     methods: {
         deleteTodo() {
-            this.$emit('del', this.todo.id)
+            this.$emit('delete', this.todo.id)
         }
     }
 }

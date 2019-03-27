@@ -1,11 +1,16 @@
 <template>
     <div class="todos">
-        <todo-item 
-            v-for="todo in todos" 
-            v-bind:key="todo.id" 
+        <div class="todos-wrapper" v-if="todos.length > 0">
+            <todo-item
+            v-for="todo in todos"
+            v-bind:key="todo.id"
             v-bind:todo="todo"
             v-on:delete="deleteTodo"
             />
+        </div>
+        <div v-else>
+            <h2>It's look empty in here, try adding a note</h2>
+        </div>
         <add-todo v-on:add="addTodo" />
     </div>
 </template>
@@ -44,12 +49,15 @@ export default {
   methods: {
       deleteTodo(id) {
           //delete todo here
-          console.log(id);
+          this.todos = this.todos.filter(todo => todo.id !== id)
       },
       addTodo(text){
-          //add todo here
-          console.log(text);
-          
+        //add todo here
+        this.todos = [...this.todos, {
+            id: this.todos.length+1,
+            text: text,
+            completed: false
+        }]
       }
   }
 }

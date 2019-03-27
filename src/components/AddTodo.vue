@@ -1,7 +1,7 @@
 <template>
     <div class="add-todo">
-        <input type="text" class="add-todo-input" v-model="text">
-        <button class="add-todo" v-on:click="addTodo">Add</button>
+        <input type="text" class="add-todo-input" placeholder="Need to write down something? " v-model="text">
+        <button class="add-todo-button" v-on:click="addTodo">Add</button>
     </div>
 </template>
 
@@ -14,8 +14,9 @@ export default {
         }
     },
     methods: {
-        addTodo(text) {
-            this.$emit('add', text)
+        addTodo() {
+            this.$emit('add', this.text)
+            this.text = ''
         }
     }
 }
