@@ -33,8 +33,7 @@ In the terminal, `cd` to your desired folder. and use
 
 `vue create vue-todo`
 
-For configuration please choose custom:
-* select router, and leave other option as default
+For configuration please choose default option:
 
 After it generates our project use
 
