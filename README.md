@@ -1,6 +1,8 @@
 # ALLWEB Vue Presentation
 ### 28 March 2019
 ### By Chungphing LY
+[Link to Slides](https://docs.google.com/presentation/d/1kKsoH7Zs0MhGzMernuXLddNZwiiQMOMaq-i5DKBak90/edit?usp=sharing)
+___
 
 # Setting up environment
 
@@ -37,7 +39,8 @@ For configuration please choose custom:
 After it generates our project use
 
 `cd vue-todo` and `npm run serve` to fire up a dev server. now we can start building our application.
-
+___
+# Developing
 ## Create Components
 
 For a Todo app, we'll need  
